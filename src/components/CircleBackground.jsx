@@ -2,8 +2,8 @@ import { useId } from 'react'
 
 export function CircleBackground({
   color,
-  width = 558,
-  height = 558,
+  width = 658,
+  height = 658,
   ...props
 }) {
   let id = useId()

@@ -332,7 +332,7 @@ export function Hero() {
               door. For college students and professors alike!
             </p>
             <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
-              <Button href="/feedback" className="">
+              <Button href="#feedback" className="">
                 Fill out our feedback form
               </Button>
             </div>
