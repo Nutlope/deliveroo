@@ -1,5 +1,7 @@
 # Deliveroo
 
+Deliveroo is a food deliver app for college students that my dad is working on. This is a landing page for it to get early feedback.
+
 ## Todos
 
 - [x] v1 of the site
