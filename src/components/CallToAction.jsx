@@ -21,7 +21,7 @@ export function CallToAction() {
             form so we can better evaluate this idea! Thanks in advance.
           </p>
           <div className="mt-8 flex justify-center">
-            <Button href="/feedback" className="hidden bg-white lg:block">
+            <Button href="/feedback" className="">
               Fill out our feedback form
             </Button>
           </div>

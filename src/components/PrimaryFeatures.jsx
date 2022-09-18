@@ -24,14 +24,7 @@ const MotionAppScreenBody = motion(AppScreen.Body)
 
 const features = [
   {
-    name: 'Invite friends for better returns',
-    description:
-      'For every friend you invite to Deliveroo, you get insider notifications 5 seconds sooner. And it’s 10 seconds if you invite an insider.',
-    icon: DeviceUserIcon,
-    screen: InviteScreen,
-  },
-  {
-    name: "Notifications until it's at your door",
+    name: 'Get notified and order ahead',
     description:
       'Get a push notification every time we have an update for you on one of your deliveries, so you can plan ahead.',
     icon: DeviceNotificationIcon,
@@ -43,6 +36,13 @@ const features = [
       'No need to spend time putting things in your cart every time you order. Just re-order and schedule your usual meals with one tap.',
     icon: DeviceTouchIcon,
     screen: InvestScreen,
+  },
+  {
+    name: 'Invite friends for better returns',
+    description:
+      'For every friend you invite to Deliveroo, you get $10 in credits to use for your next meal.',
+    icon: DeviceUserIcon,
+    screen: InviteScreen,
   },
 ]
 
