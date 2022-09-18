@@ -1,10 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
 import { CircleBackground } from '@/components/CircleBackground'
 import { Container } from '@/components/Container'
+import { useForm } from '@formspree/react'
 import { Button } from './Button'
 import { SelectField, TextField } from './Fields'
 
 export function CallToAction() {
+  const [state, handleSubmit] = useForm('xwkzlwly')
   return (
     <section
       id="feedback"
@@ -18,7 +20,7 @@ export function CallToAction() {
           <h2 className="text-3xl font-medium tracking-tight text-white sm:text-4xl">
             Give us your feedback today.
           </h2>
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className="mt-2 space-y-6 text-white">
               <TextField
                 label="Email"
@@ -30,7 +32,7 @@ export function CallToAction() {
               />
               <TextField
                 label="Feedback"
-                id="text"
+                id="feedback"
                 name="text"
                 type="textarea"
                 autoComplete="none"
@@ -39,8 +41,8 @@ export function CallToAction() {
               <SelectField
                 className="col-span-full"
                 label="Are you interested in partnering with us on this idea?"
-                id="referral-source"
-                name="referral_source"
+                id="interested-in-partnering"
+                name="interested-in-partnering"
               >
                 <option>Select one</option>
                 <option>Yes, I'm interested in being a co-founder</option>
@@ -48,9 +50,17 @@ export function CallToAction() {
                 <option>No, thank you</option>
               </SelectField>
             </div>
-            <Button type="submit" color="cyan" className="mt-8 w-1/2">
+            <Button
+              type="submit"
+              color="cyan"
+              className="mt-8 w-1/2"
+              disabled={state.submitting}
+            >
               Submit form
             </Button>
+            {state.succeeded && (
+              <div className="text-white">Thanks for submitting!</div>
+            )}
           </form>
         </div>
       </Container>
