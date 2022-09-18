@@ -11,4 +11,4 @@ Deliveroo is a food deliver app for college students that my dad is working on. 
 - [x] Make the feedback form on the website and add the select for co-founder
 - [x] Make form work and trigger an API route that sends an email to my dad
 - [ ] Replace logo
-- [ ] Update FAQs
+- [ ] Update FAQs (send to dad)
